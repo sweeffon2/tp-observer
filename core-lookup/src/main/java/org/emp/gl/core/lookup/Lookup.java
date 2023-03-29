@@ -10,7 +10,7 @@ import java.util.Map;
 
 /**
  *
- * @author tina
+ * @author Teacher
  */
 public class Lookup {
     
