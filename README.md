@@ -28,8 +28,9 @@ int val = 5+r.nextInt(15-5) ;
 8) Vous allez remarquer que l’exécution de la question 7 engendre souvent des Bogues.  Pourquoi ?
 
 9) Afin de résoudre les problèmes relatifs à notre observer, nous allons déléguer son travail à une instance de la classe : PropertyChangeSupport.
-   ***NB.***  *Pensez à faire hériter notre interface TimerChangeListener de la classe **PropertyChangeListener** * 
+   
+   ***NB.***  *Pensez à faire hériter notre interface TimerChangeListener de la classe* ***PropertyChangeListener*** 
 
-10) refaire le test de la question 7).  avez vous résolu le problème ?
+10) refaire le test de la question 7.  avez vous résolu le problème ?
 
-Bonus) en utilisant ce service, créer une application permettant d’afficher l’heure sur une interface graphique.
+Bonus) en utilisant ce service, créer une application permettant d’afficher l’heure sur une interface graphique en utilisant la bibliotheque *Swing* de Java.
