@@ -28,12 +28,16 @@ public class Lookup {
     private Lookup() {
     }
     
-    public static Lookup getInstance() {
-        return LookupHolder.INSTANCE;
-    }
-    
-    private static class LookupHolder {
+    private static Lookup INSTANCE = null ;
+    private static Object lock = new Object() ;
 
-        private static final Lookup INSTANCE = new Lookup();
+    public static Lookup getInstance() {
+        if (INSTANCE == null){
+            synchronized(lock){
+                if (INSTANCE ==null)
+                INSTANCE = new Lookup() ;
+            }
+        }
+        return INSTANCE;
     }
 }
